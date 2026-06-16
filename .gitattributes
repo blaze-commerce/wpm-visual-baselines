@@ -1,0 +1,5 @@
+# Treat screenshots as binary — no line-diff noise; GitHub still renders its rich image diff
+# (2-up / swipe / onion-skin) when a PNG changes between commits.
+*.png binary
+*.jpg binary
+*.jpg binary

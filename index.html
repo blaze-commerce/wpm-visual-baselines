@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WPM Visual Reports — Blaze Commerce</title>
+<style>
+  :root{--bg:#0f1117;--card:#1a1d27;--ink:#e8eaf0;--mut:#8b90a0;--line:#2a2e3a;--acc:#4ea1ff;--ok:#3fb950;--chg:#f0883e}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif}
+  .topnav{position:sticky;top:0;z-index:9;display:flex;gap:2px;flex-wrap:wrap;background:#0b0d13;border-bottom:1px solid var(--line);padding:8px 16px}
+  .topnav a{padding:7px 14px;border-radius:7px;text-decoration:none;color:var(--mut);font-size:14px;font-weight:500}
+  .topnav a:hover{background:#1a1d27;color:var(--ink)} .topnav a.cur{background:var(--acc);color:#06203f}
+  .wrap{max-width:820px;margin:0 auto;padding:36px 24px}
+  h1{font-size:22px;margin:0 0 6px} p.lead{color:var(--mut);margin:0 0 28px;font-size:15px}
+  a.card{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:12px 0;color:var(--ink);text-decoration:none}
+  a.card:hover{border-color:var(--acc)}
+  .card b{font-size:17px} .card span{color:var(--mut);font-size:13px;display:block;margin-top:3px}
+  .tag{font-size:12px;font-weight:700;padding:4px 11px;border-radius:20px;white-space:nowrap}
+  .tag.diff{background:#3a2a16;color:var(--chg)} .tag.base{background:#1d2333;color:var(--acc)}
+</style></head><body>
+<nav class="topnav">
+  <a href="./" class="cur">Overview</a>
+  <a href="stkilda/">St Kilda</a>
+  <a href="pegasushealthcare/">Pegasus</a>
+  <a href="nazarrugs/">Nazar Rugs</a>
+  <a href="blazecommerce/">Blaze Commerce</a>
+</nav>
+<div class="wrap">
+<h1>WPM Visual Reports</h1>
+<p class="lead">Before / after visual checks for monthly WordPress maintenance. <b>Diff reports</b> show Reference vs Test per page with the highlighted Diff + mismatch % (click Passed / Changed to filter). <b>Baselines</b> are the current reference set — they get a Diff report after their next maintenance run.</p>
+<a class="card" href="stkilda/"><span><b>St Kilda Dentist</b><span>stkildadentist.com.au</span></span><span class="tag base">Baseline</span></a>
+<a class="card" href="pegasushealthcare/"><span><b>Pegasus Healthcare</b><span>pegasushealthcare.com.au</span></span><span class="tag diff">Diff report</span></a>
+<a class="card" href="nazarrugs/"><span><b>Nazar Rug Galleries</b><span>nazarrugs.com.au</span></span><span class="tag diff">Diff report</span></a>
+<a class="card" href="blazecommerce/"><span><b>Blaze Commerce</b><span>blazecommerce.io</span></span><span class="tag base">Baseline</span></a>
+</div></body></html>
