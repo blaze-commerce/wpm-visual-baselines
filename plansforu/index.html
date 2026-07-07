@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>plansforu — WPM visual diff (2026-07-07)</title><style>
+ :root{--bg:#0f1117;--card:#1a1d27;--ink:#e8eaf0;--mut:#8b90a0;--line:#2a2e3a;--ok:#3fb950;--chg:#f0883e;--acc:#4ea1ff}
+ *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif}
+ a{color:inherit}
+ .topnav{position:sticky;top:0;z-index:9;display:flex;gap:2px;flex-wrap:wrap;background:#0b0d13;border-bottom:1px solid var(--line);padding:8px 16px}
+ .topnav a{padding:7px 14px;border-radius:7px;text-decoration:none;color:var(--mut);font-size:14px;font-weight:500}
+ .topnav a:hover{background:#1a1d27;color:var(--ink)} .topnav a.cur{background:var(--acc);color:#06203f}
+ header{position:sticky;top:43px;background:var(--bg);border-bottom:1px solid var(--line);padding:16px 24px;z-index:8}
+ header h1{margin:0;font-size:18px}
+ .filt{margin-top:10px;display:flex;gap:8px}
+ .filt button{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 14px;border-radius:20px;font:inherit;font-size:13px;font-weight:600}
+ .filt button.on[data-f=all]{background:#23283a;border-color:var(--acc)}
+ .filt button.on[data-f=changed]{background:#3a2a16;color:var(--chg);border-color:var(--chg)}
+ .filt button.on[data-f=passed]{background:#16321f;color:var(--ok);border-color:var(--ok)}
+ .meta{color:var(--mut);font-size:13px;margin-top:8px}
+ .wrap{padding:20px;max-width:1300px;margin:0 auto}
+ .cmp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:18px;border-left:3px solid var(--chg)}
+ .cmp.ok{border-left-color:var(--ok)} .cmp.ok .view{opacity:.55}
+ .cmp h3{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:10px;flex-wrap:wrap} .cmp h3 span{color:var(--mut);font-weight:400}
+ .accept{margin-left:auto;cursor:pointer;border:1px solid var(--line);background:#0b0d13;color:var(--mut);padding:5px 12px;border-radius:7px;font:inherit;font-size:12px;font-weight:600}
+ .cmp.ok .accept{background:#16321f;color:var(--ok);border-color:var(--ok)}
+ .tabs{display:flex;gap:6px;margin-bottom:10px}
+ .tabs .tab{cursor:pointer;border:1px solid var(--line);background:#0b0d13;color:var(--mut);padding:5px 14px;border-radius:7px;font:inherit;font-size:13px;font-weight:600}
+ .tabs .tab.on{background:var(--acc);color:#06203f;border-color:var(--acc)}
+ .view{background:#0b0d13;border:1px solid var(--line);border-radius:8px;overflow:auto;max-height:80vh}
+ .view .im{display:none} .view .im.on{display:block} .view img{width:100%;height:auto;display:block}
+ .prow{padding:6px 10px;font-size:13px;color:var(--mut);border-bottom:1px solid var(--line)} .prow em{color:#5a5f70;font-style:normal}
+ .prow .ok{display:inline-block;background:#16321f;color:var(--ok);font-weight:700;font-size:11px;padding:1px 6px;border-radius:4px;margin-right:6px}
+ .passhdr{margin:24px 0 8px;color:var(--mut);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+</style></head><body>
+<nav class="topnav"><a href="../">Overview</a><a href="../stkilda/">St Kilda</a><a href="../pegasushealthcare/">Pegasus</a><a href="../nazarrugs/">Nazar Rugs</a><a href="../blazecommerce/">Blaze Commerce</a></nav>
+<header><h1>plansforu — WPM visual diff <span style="color:var(--mut);font-weight:400">· 2026-07-07</span></h1>
+ <div class="filt">
+   <button class="on" data-f="all">All (60)</button>
+   <button data-f="changed">Changed (8)</button>
+   <button data-f="review">To review (<span id="toreview">8</span>)</button>
+   <button data-f="passed">Passed (52)</button>
+ </div>
+ <div class="meta">60 comparisons (desktop · tablet · mobile) · "changed" = pixel diff above 0.05% — a candidate, not a verdict. You're the reviewer: tap Diff / Reference / Test, then <b>Mark reviewed · pass</b> the ones that are fine (dynamic-content noise). Reviewed: <b id="rev">0</b> / 8. Decisions save in this browser.</div>
+</header><div class="wrap">
+<section class="cmp" data-type="changed" data-id="plansforu__page__contact__mobile"><h3>plansforu__page__contact <span>[mobile] — 31.32% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__page__contact__mobile_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__contact__mobile_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__page__contact__mobile_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__contact__mobile_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__page__contact__mobile_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__contact__mobile_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__page__wishlist__mobile"><h3>plansforu__page__wishlist <span>[mobile] — 0.21% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__page__wishlist__mobile_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__wishlist__mobile_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__page__wishlist__mobile_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__wishlist__mobile_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__page__wishlist__mobile_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__page__wishlist__mobile_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__heath_parasol_original_construction_plans__desktop"><h3>plansforu__product__heath-parasol-original-construction-plans <span>[desktop] — 6.38% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__desktop_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__heath_parasol_original_construction_plans__tablet"><h3>plansforu__product__heath-parasol-original-construction-plans <span>[tablet] — 6.95% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__tablet_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__heath_parasol_original_construction_plans__mobile"><h3>plansforu__product__heath-parasol-original-construction-plans <span>[mobile] — 4.16% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__heath_parasol_original_construction_plans__mobile_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop"><h3>plansforu__product__dhc-1-chipmunk-51in-model-plans <span>[desktop] — 7.81% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__desktop_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet"><h3>plansforu__product__dhc-1-chipmunk-51in-model-plans <span>[tablet] — 6.56% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__tablet_test.jpg"></a></div></section>
+<section class="cmp" data-type="changed" data-id="plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile"><h3>plansforu__product__dhc-1-chipmunk-51in-model-plans <span>[mobile] — 8.98% changed</span><button class="accept" type="button">Mark reviewed · pass</button></h3>
+    <div class="tabs"><button class="tab on" data-i="2">Diff</button><button class="tab" data-i="0">Reference</button><button class="tab" data-i="1">Test</button></div>
+    <div class="view"><a class="im on" data-i="2" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_diff.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_diff.jpg"></a><a class="im" data-i="0" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_ref.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_ref.jpg"></a><a class="im" data-i="1" href="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_test.jpg" target="_blank"><img loading="lazy" src="diffs/plansforu__product__dhc_1_chipmunk_51in_model_plans__mobile_test.jpg"></a></div></section>
+<div class="passhdr" data-type="passed">Passed (52) — pixel-identical</div><div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__home__home <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__home__home <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__home__home <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__contact <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__contact <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__about-us <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__about-us <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__about-us <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__category <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__category <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__category <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__faq <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__faq <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__faq <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__wishlist <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__wishlist <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shop <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shop <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shop <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__privacy-policy <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__privacy-policy <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__privacy-policy <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__terms-and-conditions <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__terms-and-conditions <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__terms-and-conditions <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shipping-policy <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shipping-policy <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__shipping-policy <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__refund_returns <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__refund_returns <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__refund_returns <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__aircraft-plans <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__aircraft-plans <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__aircraft-plans <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__wooden-boat-plans-pdf <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__wooden-boat-plans-pdf <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__wooden-boat-plans-pdf <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__ultralight-aircraft-plans-pdf <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__ultralight-aircraft-plans-pdf <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__ultralight-aircraft-plans-pdf <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__kayak-stitch-and-glue-plans-pdf <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__kayak-stitch-and-glue-plans-pdf <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__page__kayak-stitch-and-glue-plans-pdf <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-forgotten-my-password-plans-u <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-forgotten-my-password-plans-u <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-forgotten-my-password-plans-u <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-ordered-my-plans-how-do-i-download-them <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-ordered-my-plans-how-do-i-download-them <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__post__ive-ordered-my-plans-how-do-i-download-them <em>[mobile]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__product_cat__canoe-kayak-plans <em>[desktop]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__product_cat__canoe-kayak-plans <em>[tablet]</em></div>
+<div class="prow" data-type="passed"><span class="ok">PASS</span> plansforu__product_cat__canoe-kayak-plans <em>[mobile]</em></div>
+</div>
+<script>
+ // per-comparison Diff/Reference/Test toggle
+ document.querySelectorAll('.cmp').forEach(c=>c.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+   c.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');
+   c.querySelectorAll('.im').forEach(im=>im.classList.toggle('on',im.dataset.i===t.dataset.i));
+ }));
+ // manual review/accept — the reviewer passes flagged diffs that are fine (saved per-browser)
+ var KEY='vrpass:plansforu:2026-07-07', store=JSON.parse(localStorage.getItem(KEY)||'{}');
+ function curFilter(){var b=document.querySelector('.filt button.on');return b?b.dataset.f:'all';}
+ function applyFilter(){var f=curFilter();document.querySelectorAll('[data-type]').forEach(function(el){
+   var accepted=el.dataset.id&&store[el.dataset.id];
+   var show = f==='all' ? true : f==='review' ? (el.dataset.type==='changed'&&!accepted) : el.dataset.type===f;
+   el.style.display=show?'':'none';});}
+ function refresh(){var n=0;document.querySelectorAll('.cmp').forEach(function(c){
+   var on=!!store[c.dataset.id];c.classList.toggle('ok',on);if(on)n++;
+   var btn=c.querySelector('.accept');if(btn)btn.textContent=on?'✓ Reviewed · passed (undo)':'Mark reviewed · pass';});
+   document.getElementById('rev').textContent=n;
+   document.getElementById('toreview').textContent=(8-n);
+   applyFilter();}
+ document.querySelectorAll('.accept').forEach(function(b){b.onclick=function(){
+   var id=b.closest('.cmp').dataset.id;if(store[id])delete store[id];else store[id]=1;
+   localStorage.setItem(KEY,JSON.stringify(store));refresh();};});
+ document.querySelectorAll('.filt button').forEach(function(b){b.onclick=function(){
+   document.querySelectorAll('.filt button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');applyFilter();};});
+ refresh();
+</script>
+</body></html>
